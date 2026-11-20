@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrankPower Ltd - Registration Form</title>
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="siwesform.css">
+</head>
+<body>
+  <main class="page-container">
+    <div class="form-card">
+      <!-- Header -->
+      <header class="form-header">
+        <div class="brand-badge">
+          <!-- <span class="brand-icon">⚡</span> -->
+          <span class="brand-name">FrankPower Ltd</span>
+        </div>
+        <h1>Registration Form</h1>
+        <p class="subtitle">Please fill the form below to get on the FrankPower train</p>
+      </header>
+
+      <form action="#" method="POST" class="registration-form">
+        <!-- Section 1: Bio Data -->
+        <fieldset class="form-section">
+          <legend class="section-title">
+            <span class="step-num">01</span>
+            <span>Bio Data</span>
+          </legend>
+
+          <div class="input-grid grid-2">
+            <div class="form-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="e.g. Helen" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Other Names</label>
+              <input type="text" id="lastname" name="lastname" placeholder="e.g. Chioma Chisimdi" required>
+            </div>
+          </div>
+
+          <div class="input-grid grid-2">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <div class="select-wrapper">
+                <select id="gender" name="gender" required>
+                  <option value="female" selected>Female</option>
+                  <option value="male">Male</option>
+                  <option value="prefer_not_to_say">Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Section 2: Application Details -->
+        <fieldset class="form-section">
+          <legend class="section-title">
+            <span class="step-num">02</span>
+            <span>Application Details</span>
+          </legend>
+
+          <div class="form-group">
+            <label class="group-label">Choose Program <span class="hint">(Select all that apply)</span></label>
+            <div class="checkbox-grid">
+              <label class="checkbox-card">
+                <input type="checkbox" name="program" value="web_mobile">
+                <span class="custom-control"></span>
+                <span class="control-label">Web / Mobile App Development</span>
+              </label>
+
+              <label class="checkbox-card">
+                <input type="checkbox" name="program" value="cybersecurity">
+                <span class="custom-control"></span>
+                <span class="control-label">Cyber Security</span>
+              </label>
+
+              <label class="checkbox-card">
+                <input type="checkbox" name="program" value="networking">
+                <span class="custom-control"></span>
+                <span class="control-label">Networking</span>
+              </label>
+
+              <label class="checkbox-card">
+                <input type="checkbox" name="program" value="data_analysis">
+                <span class="custom-control"></span>
+                <span class="control-label">Data Analysis</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="group-label">Do you have a laptop?</label>
+            <div class="radio-pill-group">
+              <label class="radio-pill">
+                <input type="radio" name="laptop" value="yes" required>
+                <span class="pill-btn">Yes, I do</span>
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="laptop" value="no" required>
+                <span class="pill-btn">No, not yet</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="about">Tell us about yourself</label>
+            <textarea id="about" name="about" rows="4" placeholder="Briefly share your background, interests, and what you hope to learn with FrankPower..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">
+            <span>Submit Registration</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
